@@ -3,10 +3,30 @@
     --color-accent: #ffb700;
 }
 
+body {
+    background: linear-gradient(to right, #1e2025, #212328);
+}
+
 li {
     list-style: none;
 }
 
+button {
+    background: none;
+    border: none;
+    color: var(--color-accent);
+    border: solid 1px var(--color-accent);
+}
+
 .app {
-    padding: 1rem;
+    /* padding: 1rem 1.5rem; */
+}
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
 }
