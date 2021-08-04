@@ -1,10 +1,5 @@
 export const stationList = [
     {
-        url: 'https://bcovlive-a.akamaihd.net/19b535b7499a4719a5c19e043063f5d9/ap-southeast-1/6034685947001/playlist.m3u8',
-        name: 'Radio mango 91.9',
-        img: 'https://radiosindia.com/images/radiomango.jpg',
-    },
-    {
         url: 'https://playerservices.streamtheworld.com/api/livestream-redirect/CLUBFMUAEAAC.aac',
         name: 'Club FM 94.3 Radio Malayalam',
         img: 'https://radiosindia.com/images/clubfm.jpg',

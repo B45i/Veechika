@@ -3,11 +3,12 @@ import { useEffect, useState } from 'react';
 import './RadioPlayer.css';
 
 const RadioPlayer = ({ name, img, url, isPlaying, togglePlay }) => {
-    const [audio] = useState(new Audio(url));
+    const [audio, setAudio] = useState(new Audio(url));
 
     useEffect(() => {
         console.log('audio change');
-    }, [audio]);
+        setAudio(new Audio(url));
+    }, [url]);
 
     useEffect(() => {
         console.log('play change');

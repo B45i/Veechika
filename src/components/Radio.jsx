@@ -9,6 +9,10 @@ const Radio = () => {
     const [isPlaying, setIsPlaying] = useState(false);
 
     const playStation = station => {
+        if (nowPlaying === station) {
+            setIsPlaying(false);
+            return;
+        }
         setNowPlaying(station);
         setIsPlaying(true);
     };
