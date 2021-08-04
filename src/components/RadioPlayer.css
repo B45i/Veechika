@@ -10,6 +10,8 @@
     background: rgba(35, 35, 35, 0.6);
     backdrop-filter: saturate(180%) blur(5px);
     border-radius: 1rem 1rem 0 0;
+
+    animation: player-in 0.8s ease;
 }
 
 .song-img {
@@ -30,4 +32,14 @@
     min-width: 60px;
     font-size: 30px;
     border-radius: 50%;
+}
+
+@keyframes player-in {
+    from {
+        bottom: -100%;
+    }
+
+    to {
+        bottom: 0;
+    }
 }

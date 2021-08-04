@@ -12,7 +12,7 @@
 
 .station-selcted {
     background-image: linear-gradient(to right, #1e2025, #2d2e31);
-    animation: 0.8s select-station cubic-bezier(0.51, 0.01, 1, 1);
+    animation: select-station 0.8s cubic-bezier(0.51, 0.01, 1, 1);
 }
 
 .station-img {
