@@ -19,6 +19,10 @@ button {
     border: solid 1px var(--color-accent);
 }
 
+button > i {
+    line-height: 2 !important;
+}
+
 .app {
     /* padding: 1rem 1.5rem; */
 }

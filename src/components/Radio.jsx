@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { stationList } from '../data/stations';
 
 import './Radio.css';
+import RadioPlayer from './RadioPlayer';
 
 const Radio = () => {
     const [nowPlaying, setNowPlaying] = useState();
@@ -35,6 +36,8 @@ const Radio = () => {
                     </li>
                 ))}
             </ul>
+
+            <RadioPlayer {...nowPlaying} />
         </div>
     );
 };

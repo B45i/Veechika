@@ -1,0 +1,33 @@
+.radio-player {
+    position: sticky;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 1.5rem 1.5rem 1rem;
+    background: rgba(35, 35, 35, 0.6);
+    backdrop-filter: saturate(180%) blur(5px);
+    border-radius: 1rem 1rem 0 0;
+}
+
+.song-img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 8px;
+}
+
+.song-name {
+    flex-grow: 1;
+    flex-shrink: 1;
+    font-size: 1.2rem;
+}
+
+.btn-player {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    font-size: 30px;
+    border-radius: 50%;
+}
