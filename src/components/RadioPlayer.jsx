@@ -13,14 +13,14 @@ const RadioPlayer = ({ name, img, url, isPlaying, togglePlay }) => {
     useEffect(() => {
         console.log('play change');
         isPlaying ? audio.play() : audio.pause();
-    }, [isPlaying]);
+    }, [isPlaying, audio]);
 
     useEffect(() => {
         audio.addEventListener('ended', () => togglePlay(false));
         return () => {
             audio.removeEventListener('ended', () => togglePlay(false));
         };
-    }, []);
+    }, [audio]);
 
     return name ? (
         <div className="radio-player">
