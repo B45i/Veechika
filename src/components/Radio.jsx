@@ -1,14 +1,20 @@
 import { useState } from 'react';
 import { stationList } from '../data/stations';
+import RadioPlayer from './RadioPlayer';
 
 import './Radio.css';
-import RadioPlayer from './RadioPlayer';
 
 const Radio = () => {
     const [nowPlaying, setNowPlaying] = useState();
+    const [isPlaying, setIsPlaying] = useState(false);
 
-    const play = station => {
+    const playStation = station => {
         setNowPlaying(station);
+        setIsPlaying(true);
+    };
+
+    const togglePlay = () => {
+        setIsPlaying(prev => !prev);
     };
 
     return (
@@ -29,15 +35,25 @@ const Radio = () => {
                         <div className="station-name">{station.name}</div>
                         <button
                             className="btn-play"
-                            onClick={e => play(station)}
+                            onClick={e => playStation(station)}
                         >
-                            <i className="icon-play"></i>
+                            <i
+                                className={
+                                    nowPlaying === station && isPlaying
+                                        ? 'icon-pause'
+                                        : 'icon-play'
+                                }
+                            ></i>
                         </button>
                     </li>
                 ))}
             </ul>
 
-            <RadioPlayer {...nowPlaying} />
+            <RadioPlayer
+                {...nowPlaying}
+                isPlaying={isPlaying}
+                togglePlay={togglePlay}
+            />
         </div>
     );
 };

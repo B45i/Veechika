@@ -19,8 +19,12 @@ button {
     border: solid 1px var(--color-accent);
 }
 
-.icon-play {
+[class^='icon-'],
+[class*=' icon-'] {
     line-height: 2 !important;
+}
+
+.icon-play {
     margin-right: -7%;
 }
 
