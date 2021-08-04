@@ -19,8 +19,9 @@ button {
     border: solid 1px var(--color-accent);
 }
 
-button > i {
+.icon-play {
     line-height: 2 !important;
+    margin-right: -7%;
 }
 
 .app {
