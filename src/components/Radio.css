@@ -3,6 +3,7 @@
 
 .station {
     display: flex;
+    width: 100%;
     gap: 1rem;
     align-items: center;
     padding: 0.8rem 1rem;
@@ -10,7 +11,8 @@
 }
 
 .station-selcted {
-    background: linear-gradient(to right, #1e2025, #2d2e31);
+    background-image: linear-gradient(to right, #1e2025, #2d2e31);
+    animation: 0.8s select-station cubic-bezier(0.51, 0.01, 1, 1);
 }
 
 .station-img {
@@ -29,4 +31,14 @@
     min-width: 40px;
     font-size: 15px;
     border-radius: 50%;
+}
+
+@keyframes select-station {
+    from {
+        background-position-x: 0;
+    }
+
+    to {
+        background-position-x: 100vw;
+    }
 }
