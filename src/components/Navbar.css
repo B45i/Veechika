@@ -1,5 +1,9 @@
 .navbar {
-    margin: 1rem 1.5rem 2rem;
+    background: var(--bg-gradient);
+    padding: 1rem 1.5rem 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 .app-subtitle {

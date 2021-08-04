@@ -1,10 +1,11 @@
 :root {
     --color-primary: #fff;
     --color-accent: #ffb700;
+    --bg-gradient: linear-gradient(to right, #1e2025, #212328);
 }
 
 body {
-    background: linear-gradient(to right, #1e2025, #212328);
+    background: var(--bg-gradient);
 }
 
 li {
