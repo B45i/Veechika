@@ -6,6 +6,10 @@ const RadioPlayer = ({ name, img, url, isPlaying, togglePlay }) => {
     const [audio] = useState(new Audio(url));
 
     useEffect(() => {
+        console.log('audio change');
+    }, [audio]);
+
+    useEffect(() => {
         console.log('play change');
         isPlaying ? audio.play() : audio.pause();
     }, [isPlaying]);

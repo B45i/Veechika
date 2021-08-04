@@ -5,7 +5,7 @@ export const stationList = [
         img: 'https://radiosindia.com/images/radiomango.jpg',
     },
     {
-        url: 'https://23623.live.streamtheworld.com/CLUBFMUAEAAC.aac',
+        url: 'https://playerservices.streamtheworld.com/api/livestream-redirect/CLUBFMUAEAAC.aac',
         name: 'Club FM 94.3 Radio Malayalam',
         img: 'https://radiosindia.com/images/clubfm.jpg',
     },
