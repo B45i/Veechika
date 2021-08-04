@@ -10,7 +10,7 @@ const Radio = () => {
 
     const playStation = station => {
         if (nowPlaying === station) {
-            setIsPlaying(false);
+            togglePlay();
             return;
         }
         setNowPlaying(station);

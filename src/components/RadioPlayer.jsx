@@ -20,7 +20,7 @@ const RadioPlayer = ({ name, img, url, isPlaying, togglePlay }) => {
         return () => {
             audio.removeEventListener('ended', () => togglePlay(false));
         };
-    }, [audio]);
+    }, [audio, togglePlay]);
 
     return name ? (
         <div className="radio-player">
