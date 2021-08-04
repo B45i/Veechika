@@ -1,27 +1,37 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
+import videojs from 'video.js';
 
 import './RadioPlayer.css';
 
-const RadioPlayer = ({ name, img, url, isPlaying, togglePlay }) => {
-    const [audio, setAudio] = useState(new Audio(url));
+export const VideoJS = props => {
+    const videoRef = useRef(null);
+    const { options } = props;
+
+    const VideoHtml = props => (
+        <div className="hidden-player" data-vjs-player>
+            <video ref={videoRef} className="video-js vjs-big-play-centered" />
+        </div>
+    );
 
     useEffect(() => {
-        console.log('audio change');
-        setAudio(new Audio(url));
-    }, [url]);
-
-    useEffect(() => {
-        console.log('play change');
-        isPlaying ? audio.play() : audio.pause();
-    }, [isPlaying, audio]);
-
-    useEffect(() => {
-        audio.addEventListener('ended', () => togglePlay(false));
+        const videoElement = videoRef.current;
+        let player;
+        if (videoElement) {
+            player = videojs(videoElement, options, () => {
+                console.log('player is ready');
+            });
+        }
         return () => {
-            audio.removeEventListener('ended', () => togglePlay(false));
+            if (player) {
+                player.dispose();
+            }
         };
-    }, [audio, togglePlay]);
+    }, [options]);
 
+    return <VideoHtml />;
+};
+
+const RadioPlayer = ({ name, img, url, isPlaying, togglePlay }) => {
     return name ? (
         <div className="radio-player">
             <img className="song-img" src={img} alt={img} />
@@ -29,6 +39,21 @@ const RadioPlayer = ({ name, img, url, isPlaying, togglePlay }) => {
             <button className="btn-player" onClick={togglePlay}>
                 <i className={isPlaying ? 'icon-pause' : 'icon-play'}></i>
             </button>
+
+            <VideoJS
+                options={{
+                    autoplay: true,
+                    sources: [
+                        {
+                            src: url,
+                            type:
+                                url.split('.').splice(-1) === 'm3u8'
+                                    ? 'application/x-mpegURL'
+                                    : 'audio/mp3',
+                        },
+                    ],
+                }}
+            />
         </div>
     ) : null;
 };

@@ -34,6 +34,11 @@
     border-radius: 50%;
 }
 
+.video-js,
+.hidden-player {
+    display: none !important;
+}
+
 @keyframes player-in {
     from {
         bottom: -100%;
