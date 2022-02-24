@@ -40,3 +40,52 @@ button {
     stroke: currentColor;
     fill: currentColor;
 }
+
+
+.video-js video,
+.vjs-text-track-display,
+.vjs-volume-menu-button,
+.vjs-progress-control,
+.vjs-fullscreen-control,
+.vjs-playback-rate,
+.vjs-remaining-time-display,
+.vjs-big-play-button,
+.vjs-control-text,
+.vjs-modal-dialog,
+.vjs-volume-panel,
+.vjs-current-time,
+.vjs-time-control,
+.vjs-live-control,
+.vjs-duration,
+.vjs-hidden,
+.vjs-seek-to-live-control,
+.vjs-spacer {
+  display: none !important;
+}
+
+.vjs-control-bar {
+  height: 100% !important;
+}
+
+.vjs-play-control {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.vjs-veechika-skin {
+  width: 80px !important;
+  height: 80px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* .vjs-paused .vjs-icon-placeholder {
+    content: 'icon-pause';
+} */
+
+.vjs-icon-placeholder:before {
+    content: '\ea1c';
+}
+/* .vjs-paused .vjs-icon-placeholder:before {
+    content: '\ea1d';
+} */
