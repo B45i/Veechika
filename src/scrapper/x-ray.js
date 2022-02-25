@@ -11,8 +11,8 @@ const scriptSelectorHls =
 
 x('https://radiosindia.com/malayalamradio.html', channelSelector, [
     {
-        image: 'a >img@src',
-        name: 'a@href',
+        img: 'a >img@src',
+        name: 'a > p',
         url: x('a@href', { scriptSelectorMp3, scriptSelectorHls }),
     },
 ]).then(results => {
