@@ -4,6 +4,7 @@
     position: sticky;
     top: 0;
     z-index: 999;
+    box-shadow: rgb(24 27 30 / 86%) 0px 20px 30px -10px;
 }
 
 .app-subtitle {
