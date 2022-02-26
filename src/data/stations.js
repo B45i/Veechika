@@ -40,6 +40,11 @@ export const stationList = [
         url: 'https://www.liveradio.es/http://103.133.180.223:8000/airtime_128',
     },
     {
+        img: 'https://onlineradiostations.in/uploads/img/radio-mango-alappuzha.png',
+        name: 'Radio Mango Alappuzha 92.7',
+        url: 'https://tunzilla.com/http://bcovlive-a.akamaihd.net/19b535b7499a4719a5c19e043063f5d9/ap-southeast-1/6034685947001/profile_0/chunklist.m3u8',
+    },
+    {
         img: 'https://radiosindia.com/images/radiomirchi.jpg',
         name: 'Radio Mirchi',
         url: 'https://n02.radiojar.com/q6hbcwmx8vzuv.mp3?rj-ttl=5&rj-tok=AAABdW3c0j8AU1QT19VJzvtLWw',
