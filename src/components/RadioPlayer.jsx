@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import Hls from 'hls.js';
 
 import './RadioPlayer.css';
@@ -7,24 +7,20 @@ const videoElement = document.getElementById('videoTag');
 const hls = new Hls();
 
 const RadioPlayer = ({ name, img, url, isPlaying, togglePlay }) => {
-    const isLoading = useRef(false);
     useEffect(() => {
-        if (!url || isLoading.current) {
+        if (!url) {
             return;
         }
-        isLoading.current = true;
         if (url.includes('.m3u8')) {
             hls.loadSource(url);
             hls.attachMedia(videoElement);
             hls.on(Hls.Events.MANIFEST_PARSED, () => {
                 if (!isPlaying) {
-                    isLoading.current = false;
                     videoElement.play();
                 }
             });
         } else {
             videoElement.src = url;
-            isLoading.current = false;
             videoElement.play();
         }
     }, [url]);

@@ -27,7 +27,7 @@ const Radio = () => {
                 {(stationList || []).map(station => (
                     <li
                         className={`station 
-                            ${nowPlaying === station ? 'station-selcted' : ''}
+                            ${nowPlaying === station ? 'station-selected' : ''}
                         `}
                         key={station.url}
                     >

@@ -10,7 +10,7 @@
     box-shadow: 0px 1rem 3px -1rem #303030;
 }
 
-.station-selcted {
+.station-selected {
     background-image: linear-gradient(to right, #1e2025, #2d2e31);
     animation: select-station 0.8s cubic-bezier(0.51, 0.01, 1, 1);
 }
