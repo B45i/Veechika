@@ -13,10 +13,7 @@
 .station-selected {
     background-image: linear-gradient(to right, #1e2025, #2d2e31);
     animation: select-station 0.8s cubic-bezier(0.51, 0.01, 1, 1);
-    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
-    /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+    background-repeat: no-repeat;
 }
 
 .station-img {
@@ -39,10 +36,10 @@
 
 @keyframes select-station {
     from {
-        background-position-x: 0;
+        background-size: 0px;
     }
 
     to {
-        background-position-x: 100vw;
+        background-size: 100vw;
     }
 }
