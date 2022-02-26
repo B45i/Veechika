@@ -8,7 +8,7 @@
 
     padding: 1.5rem 1.5rem 1rem;
     background: rgba(35, 35, 35, 0.6);
-    backdrop-filter: saturate(180%) blur(5px);
+    backdrop-filter: saturate(180%) blur(25px);
     border-radius: 1rem 1rem 0 0;
 
     animation: player-in 0.8s ease;
