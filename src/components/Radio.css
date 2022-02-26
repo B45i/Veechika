@@ -36,10 +36,10 @@
 
 @keyframes select-station {
     from {
-        background-size: 0px;
+        background-size: 0px 100%;
     }
 
     to {
-        background-size: 100vw;
+        background-size: 100vw 100%;
     }
 }
