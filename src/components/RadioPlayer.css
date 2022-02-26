@@ -10,6 +10,9 @@
     background: rgba(35, 35, 35, 0.6);
     backdrop-filter: saturate(180%) blur(25px);
     border-radius: 1rem 1rem 0 0;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px -4px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
     animation: player-in 0.8s ease;
 }
