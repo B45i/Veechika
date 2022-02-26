@@ -10,21 +10,6 @@ export const stationList = [
         url: 'https://playerservices.streamtheworld.com/api/livestream-redirect/CLUBFMUAEAAC.aac',
     },
     {
-        img: 'https://shortfilmsite.com/images/radiokerala.png',
-        name: 'Radio Kerala',
-        url: 'https://www.liveradio.es/http://103.133.180.223:8000/airtime_128',
-    },
-    {
-        img: 'https://radiosindia.com/images/radiomirchi.jpg',
-        name: 'Radio Mirchi',
-        url: 'https://n02.radiojar.com/q6hbcwmx8vzuv.mp3?rj-ttl=5&rj-tok=AAABdW3c0j8AU1QT19VJzvtLWw',
-    },
-    {
-        img: 'https://radiosindia.com/images/radiosuno.jpg',
-        name: 'Radio Suno',
-        url: 'https://playerservices.streamtheworld.com/api/livestream-redirect/SUNO917_SC',
-    },
-    {
         img: 'https://radiosindia.com/images/fmrainbow.jpg',
         name: 'FM Rainbow Kochi',
         url: 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio044/playlist.m3u8',
@@ -42,12 +27,27 @@ export const stationList = [
     {
         img: 'https://radiosindia.com/images/air.jpg',
         name: 'Ananthapuri FM',
-        url: 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio229/playlist.m3u8 or https://www.liveradio.es/http://59.90.28.91:88/broadwavehigh.mp3?src=1',
+        url: 'https://www.liveradio.es/http://59.90.28.91:88/broadwavehigh.mp3?src=1',
     },
     {
         img: 'https://radiosindia.com/images/air.jpg',
         name: 'AIR Malayalam',
         url: 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio230/playlist.m3u8',
+    },
+    {
+        img: 'https://shortfilmsite.com/images/radiokerala.png',
+        name: 'Radio Kerala',
+        url: 'https://www.liveradio.es/http://103.133.180.223:8000/airtime_128',
+    },
+    {
+        img: 'https://radiosindia.com/images/radiomirchi.jpg',
+        name: 'Radio Mirchi',
+        url: 'https://n02.radiojar.com/q6hbcwmx8vzuv.mp3?rj-ttl=5&rj-tok=AAABdW3c0j8AU1QT19VJzvtLWw',
+    },
+    {
+        img: 'https://radiosindia.com/images/radiosuno.jpg',
+        name: 'Radio Suno',
+        url: 'https://playerservices.streamtheworld.com/api/livestream-redirect/SUNO917_SC',
     },
     {
         img: 'https://radiosindia.com/images/malluradio.jpg',

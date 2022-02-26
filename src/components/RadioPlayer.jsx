@@ -7,20 +7,24 @@ const videoElement = document.getElementById('videoTag');
 const hls = new Hls();
 
 const RadioPlayer = ({ name, img, url, isPlaying, togglePlay }) => {
+    const isLoading = useRef(false);
     useEffect(() => {
-        if (!url) {
+        if (!url || isLoading.current) {
             return;
         }
+        isLoading.current = true;
         if (url.includes('.m3u8')) {
             hls.loadSource(url);
             hls.attachMedia(videoElement);
             hls.on(Hls.Events.MANIFEST_PARSED, () => {
                 if (!isPlaying) {
+                    isLoading.current = false;
                     videoElement.play();
                 }
             });
         } else {
             videoElement.src = url;
+            isLoading.current = false;
             videoElement.play();
         }
     }, [url]);
