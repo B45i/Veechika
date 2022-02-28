@@ -10,7 +10,7 @@ export const stationList = [
         url: 'https://playerservices.streamtheworld.com/api/livestream-redirect/CLUBFMUAEAAC.aac',
     },
     {
-        img: 'https://liveradios.in/wp-content/uploads/AIR_Kochi_FM.jpg',
+        img: 'https://radiosindia.com/images/air.jpg',
         name: 'AIR Kochi FM 102.3',
         url: 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio045/playlist.m3u8',
     },
@@ -40,22 +40,22 @@ export const stationList = [
         url: 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio230/playlist.m3u8',
     },
     {
-        img: 'https://onlineradiofm.in/assets/image/radio/180/air-kannur.jpg',
-        name: 'All India Radio AIR Kannur 101.5',
+        img: 'https://radiosindia.com/images/air.jpg',
+        name: 'AIR Kannur 101.5',
         url: 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio173/playlist.m3u8',
     },
     {
-        img: 'https://liveradios.in/wp-content/uploads/1200px-Logo_of_AIR.svg_.png',
+        img: 'https://radiosindia.com/images/air.jpg',
         name: 'AIR Devikulam',
         url: 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio214/playlist.m3u8',
     },
     {
-        img: 'https://liveradios.in/wp-content/uploads/1200px-Logo_of_AIR.svg_.png',
+        img: 'https://radiosindia.com/images/air.jpg',
         name: 'AIR Kavaratti',
         url: 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio189/playlist.m3u8',
     },
     {
-        img: 'https://liveradios.in/wp-content/uploads/1200px-Logo_of_AIR.svg_.png',
+        img: 'https://radiosindia.com/images/air.jpg',
         name: 'AIR Thrissur',
         url: 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio036/chunklist.m3u8',
     },
