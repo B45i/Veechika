@@ -10,6 +10,11 @@ export const stationList = [
         url: 'https://playerservices.streamtheworld.com/api/livestream-redirect/CLUBFMUAEAAC.aac',
     },
     {
+        img: 'https://liveradios.in/wp-content/uploads/AIR_Kochi_FM.jpg',
+        name: 'AIR Kochi FM 102.3',
+        url: 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio045/playlist.m3u8',
+    },
+    {
         img: 'https://radiosindia.com/images/fmrainbow.jpg',
         name: 'FM Rainbow Kochi',
         url: 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio044/playlist.m3u8',
