@@ -1,11 +1,11 @@
 export const stationList = [
     {
-        img: 'https://radiosindia.com/images/radiomango.jpg',
+        img: 'https://onlineradiofm.in/assets/image/radio/180/radiomango.png',
         name: 'Radio Mango',
         url: 'https://bcovlive-a.akamaihd.net/19b535b7499a4719a5c19e043063f5d9/ap-southeast-1/6034685947001/playlist.m3u8',
     },
     {
-        img: 'https://radiosindia.com/images/clubfm.jpg',
+        img: 'https://play-lh.googleusercontent.com/SMFPx3RqAoyTP03fYM-JAuWO0FUfFXoRZitq5ANq165dUMqHaWSFjraUPGfzQpEWJrw',
         name: 'Club  FM',
         url: 'https://playerservices.streamtheworld.com/api/livestream-redirect/CLUBFMUAEAAC.aac',
     },
@@ -20,7 +20,7 @@ export const stationList = [
         url: 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio044/playlist.m3u8',
     },
     {
-        img: 'https://radiosindia.com/images/airkozhikodefm.jpg',
+        img: 'https://radiosindia.com/images/air.jpg',
         name: 'AIR Kozhikode',
         url: 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio083/playlist.m3u8',
     },
@@ -98,6 +98,11 @@ export const stationList = [
         img: 'https://radiosindia.com/images/janavanifm.jpg',
         name: 'Janavani FM',
         url: 'https://cors.bitwize.com.lb/http://centova87.instainternet.com:8272/;',
+    },
+    {
+        img: 'https://cdn.onlineradiobox.com/img/l/9/89239.v11.png',
+        name: 'Radio me Malayalam',
+        url: 'https://node-19.zeno.fm/5sm5gtgttzzuv?rj-ttl=5&rj-tok=AAABf0nKBsYA7D7bhOSGxv0IIA',
     },
     {
         img: 'https://radiosindia.com/images/986malayalamradio.jpg',
