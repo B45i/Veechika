@@ -1,0 +1,6 @@
+{
+  "appId": "com.b45i.veechika",
+  "appName": "Veechika",
+  "webDir": "build",
+  "bundledWebRuntime": false
+}

@@ -3,6 +3,9 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
+        "@capacitor/android": "^3.5.1",
+        "@capacitor/cli": "^3.5.1",
+        "@capacitor/core": "^3.5.1",
         "@testing-library/jest-dom": "^5.14.1",
         "@testing-library/react": "^11.2.7",
         "@testing-library/user-event": "^12.8.3",
@@ -14,6 +17,7 @@
     },
     "scripts": {
         "start": "react-scripts start",
+        "start:android": "npx cap open android",
         "build": "react-scripts build",
         "scrape": "node src/scrapper/x-ray.js",
         "test": "react-scripts test",

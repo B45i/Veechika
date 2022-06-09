@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Veechika</string>
+    <string name="title_activity_main">Veechika</string>
+    <string name="package_name">com.b45i.veechika</string>
+    <string name="custom_url_scheme">com.b45i.veechika</string>
+</resources>
