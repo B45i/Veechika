@@ -12,6 +12,10 @@ li {
     list-style: none;
 }
 
+a {
+    color: #fff;
+}
+
 button {
     background: none;
     border: none;
