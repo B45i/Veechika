@@ -38,6 +38,7 @@
         ]
     },
     "devDependencies": {
+        "axios": "^1.4.0",
         "x-ray-scraper": "^3.0.6"
     }
 }
