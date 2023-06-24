@@ -1,5 +1,10 @@
 export const stationList = [
     {
+        img: '/stations/air.jpg',
+        name: 'Air Rainbow 107.5 FM',
+        url: 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio044/playlist.m3u8',
+    },
+    {
         img: '/stations/radiomirchi.jpg',
         name: 'Mirchi Kochi',
         url: 'http://listen.openstream.co/4626/audio or https://n02.radiojar.com/q6hbcwmx8vzuv.mp3?rj-ttl=5&rj-tok=AAABdW3c0j8AU1QT19VJzvtLWw',
